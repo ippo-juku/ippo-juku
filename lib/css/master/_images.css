@@ -1,0 +1,241 @@
+
+/*=== Icon Fonts
+==============================================================================================*/
+@font-face{
+	font-family: "CreastyPicto";
+		src: url("/lib/font/creastypicto/creastypicto.eot");
+	src: url("/lib/font/creastypicto/creastypicto.eot?#iefix") format("embedded-opentype"),
+		url("/lib/font/creastypicto/creastypicto.woff") format("woff"), 
+		url("/lib/font/creastypicto/creastypicto.ttf") format("truetype"), 
+		url("/lib/font/creastypicto/creastypicto.svg#svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*	97 icons
+-----------------------------------------------*/
+.icon-alert:before{ content: "!" !important; }
+.icon-arrow-left:before{ content: "[" !important; }
+.icon-arrow-right:before{ content: "]" !important; }
+.icon-arrow-up:before{ content: "{" !important; }
+.icon-arrow-down:before{ content: "}" !important; }
+.icon-arrowhead-right:before{ content: ">" !important; }
+.icon-arrowhead-down:before{ content: "<" !important; }
+.icon-bad:before{ content: "h" !important; }
+.icon-bargraph:before{ content: "5" !important; }
+.icon-book:before{ content: "B" !important; }
+.icon-book-open:before{ content: "b" !important; }
+.icon-calender:before{ content: "\\" !important; }
+.icon-call:before{ content: "~" !important; }
+.icon-camera:before{ content: "v" !important; }
+.icon-card:before{ content: "%" !important; }
+.icon-cart:before{ content: "$" !important; }
+.icon-check:before{ content: "3" !important; }
+.icon-check-c:before{ content: "2" !important; }
+.icon-clip:before{ content: "J" !important; }
+.icon-clock:before{ content: "t" !important; }
+.icon-cloud:before{ content: "C" !important; }
+.icon-comment:before{ content: "w" !important; }
+.icon-compass:before{ content: "c" !important; }
+.icon-computer:before{ content: "A" !important; }
+.icon-config:before{ content: "x" !important; }
+.icon-dashboard:before{ content: "," !important; }
+.icon-delete:before{ content: "*" !important; }
+.icon-delete-c:before{ content: "D" !important; }
+.icon-document:before{ content: "F" !important; }
+.icon-download:before{ content: "4" !important; }
+.icon-edit:before{ content: "p" !important; }
+.icon-enroll:before{ content: ":" !important; }
+.icon-evernote:before{ content: "n" !important; }
+.icon-expand:before{ content: "`" !important; }
+.icon-export:before{ content: "X" !important; }
+.icon-external:before{ content: "e" !important; }
+.icon-facebook:before{ content: "6" !important; }
+.icon-file:before{ content: "o" !important; }
+.icon-flag:before{ content: "^" !important; }
+.icon-flickr:before{ content: "r" !important; }
+.icon-gear:before{ content: "y" !important; }
+.icon-git:before{ content: "\a3" !important; }
+.icon-good:before{ content: "g" !important; }
+.icon-gplus:before{ content: "1" !important; }
+.icon-hatena:before{ content: "\a1" !important; }
+.icon-help:before{ content: "?" !important; }
+.icon-home:before{ content: "H" !important; }
+.icon-inbox:before{ content: "I" !important; }
+.icon-info:before{ content: "i" !important; }
+.icon-instagram:before{ content: "\a4" !important; }
+.icon-key:before{ content: "K" !important; }
+.icon-launch:before{ content: "|" !important; }
+.icon-link:before{ content: "j" !important; }
+.icon-list:before{ content: "l" !important; }
+.icon-locked:before{ content: "(" !important; }
+.icon-logout:before{ content: "Z" !important; }
+.icon-look:before{ content: "E" !important; }
+.icon-love:before{ content: "k" !important; }
+.icon-mail:before{ content: "M" !important; }
+.icon-mail2:before{ content: "L" !important; }
+.icon-mark:before{ content: "@" !important; }
+.icon-mic:before{ content: "u" !important; }
+.icon-mobile:before{ content: "a" !important; }
+.icon-music:before{ content: "m" !important; }
+.icon-news:before{ content: "N" !important; }
+.icon-picture:before{ content: "P" !important; }
+.icon-pin:before{ content: "." !important; }
+.icon-play:before{ content: "9" !important; }
+.icon-plus:before{ content: "&" !important; }
+.icon-plus-c:before{ content: "+" !important; }
+.icon-power:before{ content: "Q" !important; }
+.icon-print:before{ content: "/" !important; }
+.icon-quote:before{ content: "\"" !important; }
+.icon-reload:before{ content: "1" !important; }
+.icon-replay:before{ content: "0" !important; }
+.icon-rss:before{ content: "f" !important; }
+.icon-rss-b:before{ content: "7" !important; }
+.icon-search:before{ content: "s" !important; }
+.icon-server:before{ content: "Y" !important; }
+.icon-share:before{ content: "R" !important; }
+.icon-shuffle:before{ content: ";" !important; }
+.icon-star:before{ content: "S" !important; }
+.icon-star-c:before{ content: "8" !important; }
+.icon-subtract:before{ content: "_" !important; }
+.icon-subtract-c:before{ content: "-" !important; }
+.icon-sound:before{ content: "=" !important; }
+.icon-tag:before{ content: "z" !important; }
+.icon-tumblr:before{ content: "\a2" !important; }
+.icon-trash:before{ content: "#" !important; }
+.icon-twitter:before{ content: "T" !important; }
+.icon-unlocked:before{ content: ")" !important; }
+.icon-user:before{ content: "U" !important; }
+.icon-video:before{ content: "V" !important; }
+.icon-wifi:before{ content: "'" !important; }
+.icon-work:before{ content: "O" !important; }
+.icon-world:before{ content: "G" !important; }
+.icon-write:before{ content: "W" !important; }
+
+
+/*	.icon
+-----------------------------------------------*/
+.icon:before{
+	display: inline;
+	display: inline-block;
+	zoom: 1;
+	width: 1em;
+	height: 1em;
+	padding-right: 5px;
+	text-align: center;
+	font-family: "CreastyPicto";
+	font-weight: normal !important;
+	font-size: 1em;
+	line-height: 1;
+	vertical-align: baseline;
+	text-transform: none !important;
+}
+.icon.icon-big:before{
+	font-size: 1.667em;
+	vertical-align: -.15ex;
+}
+
+ul li.icon{
+	list-style: none;
+	*list-style: disc;
+}
+ul li.icon:before{
+	position: absolute;
+	display: block;
+	width: 1em !important;
+	left: .4ex !important;
+	text-align: center !important;
+	margin-top: .15ex;
+}
+ul li li.icon:before{ left: 4.5ex; }
+
+ul.compact li.icon:before{
+	position: relative;
+	left: 0 !important;
+	float: left;
+	margin-top: 0;
+	bottom: -.15ex;
+}
+ul.compact li.icon.icon-big{ line-height: 1.667em; }
+
+
+/*=== Icon Replace
+==============================================================================================*/
+.icon-replace{
+	display: block;
+	zoom: 1;
+	padding: 0;
+	height: 1em;
+	width: 1em;
+	font-family: "CreastyPicto";
+	font-size: 1.667em;
+	font-weight: normal !important;
+	line-height: .5em;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.icon-replace:before{
+	display: block;
+	position: relative;
+	zoom: 1;
+	width: 1em;
+	height: 1em;
+	font-family: "CreastyPicto";
+	line-height: .5em;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+
+/*=== Icon Images
+==============================================================================================*/
+.image-file-pdf{ background-image: url(/lib/images/icons/replace/pdf.gif); }
+.image-file-quicktime{ background-image: url(/lib/images/icons/replace/quicktime.gif); }
+.image-file-shockwave{ background-image: url(/lib/images/icons/replace/shockwave.gif); }
+.image-file-swf{ background-image: url(/lib/images/icons/replace/flash.gif); }
+
+.icon-image{
+	zoom: 1;
+	padding-left: 20px !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-position-y: top;
+}
+
+a.icon-image:not([className~=icon]),
+span.icon-image:not([className~=icon]){ display: inline-block; vertical-align: bottom; }
+li.icon-image,
+p.icon-image{ background-position: left center; }
+
+
+/*=== Icon Image Replace
+==============================================================================================*/
+button.icon-image-replace{
+	-moz-outline: none;
+	padding: 0;
+	border-style: none;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.icon-image-replace{
+	zoom: 1;
+	display: inline;
+	display: inline-block;
+	display: -moz-inline-box;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 24px;
+	min-height: 16px;
+	padding: 0 !important;
+	text-align: left;
+	color: transparent;
+	font: 1px/0 monospace !important;
+	word-spacing: -2px;
+	letter-spacing: -2px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+a.icon-image-replace,
+span.icon-image-replace{ vertical-align: bottom; }

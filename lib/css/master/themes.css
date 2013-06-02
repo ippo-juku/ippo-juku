@@ -1,0 +1,206 @@
+
+/*=== Body
+==============================================================================================*/
+body{
+	font: 12px/1.8 "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Arial;
+	color: #111;
+	text-align: center;
+	min-height: 100%;
+}
+body > *{ text-align: left; }
+
+
+/*=== Layout
+==============================================================================================*/
+#container{
+	position: relative;
+	zoom: 1;
+	margin: 0 auto;
+	width: 940px;
+	text-align: left;
+}
+
+#docheader{
+	position: relative;
+	margin: -3px 0 0;
+	padding: 40px 0;
+	background: url("/lib/images/template/gnav/header-footer.png") repeat-x 0 100%;
+	z-index: -1;
+}
+
+#content{
+	position: relative;
+	z-index: 1;
+	zoom: 1;
+	padding: 40px 0;
+}
+#content div{ position: relative; }
+
+#container:after,
+#content:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+/*=== Side Navigation
+==============================================================================================*/
+#side-body{ float: left; width: 74.468085099%; }
+#side-nav{ float: right; width: 23.404255317%; }
+
+
+/*=== Breadcrumb List
+==============================================================================================*/
+#breadcrumb{
+	position: relative;
+	margin: 0 auto 1ex;
+	padding: 0;
+	width: 940px;
+}
+#breadcrumb li{ margin: 0; padding-right: 1ex; }
+#breadcrumb li,
+#breadcrumb li a{
+	color: #809fc7;
+	text-shadow: 0 1px 0 #fff;
+	-webkit-transition: color .2s;
+	-moz-transition: color .2s;
+	-o-transition: color .2s;
+	-ms-transition: color .2s;
+	transition: color .2s;
+}
+#breadcrumb li:after{
+	content: ">";
+	padding-left: 1ex;
+}
+#breadcrumb li a:hover{ color: #003f8e; text-decoration: none; }
+
+
+/*=== Pagenation
+==============================================================================================*/
+#page-navigation ul{ margin: 20px 0 0; }
+#page-navigation li{ margin-left: 4px; }
+#page-navigation .ellipsis{ line-height: 28px; }
+
+
+/*=== Blog
+==============================================================================================*/
+.post{ zoom: 1; }
+.post:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.page-entries .post h3{ font-size: 2em; margin-top: 0; }
+.page-entries .post h3:first-letter{ color: #003f8e; }
+
+.post-time{
+	position: absolute;
+	left: 0;
+	font-family: Georgia, "Times New Roman", Times;
+	font-style: italic;
+	color: #8e0000;
+}
+.post .post-time .date,
+.post .post-time .year{
+	display: block;
+}
+.post .post-time .date{
+	font-size: 2em;
+	line-height: 1.4;
+	letter-spacing: 1px;
+	margin-bottom: .5em;
+}
+.post .post-time .year{
+	line-height: 1.8;
+}
+
+.page-entries .post{
+	padding-left: 140px;
+	padding-bottom: 2.5em;
+	margin-bottom: 3em;
+	border-bottom: 1px dotted #aaa;
+}
+
+.post-footer{
+	margin-top: 2.5em;
+	padding-top: 3em;
+	border-top: 1px dotted #aaa;
+}
+.post-footer ul.menu li{
+	margin-right: 1em;
+	color: #888;
+}
+.post-footer a{ color: #888; }
+
+
+/*=== Home Hero Slider
+==============================================================================================*/
+.page-home #docheader{
+	position: relative;
+	height: 300px;
+	padding: 0 0 3px;
+	overflow: hidden;
+	width: 100%;
+}
+.jcarousel-skin-ippo{
+	position: absolute;
+    left: 50%;
+    margin-left: -1415px; /* = -940 * 1.5 - 5 */
+}
+.jcarousel-skin-ippo,
+.jcarousel-skin-ippo .jcarousel-list{ width: 2830px; } /* = 940 * 3 + 5 * 2 */
+.jcarousel-skin-ippo .jcarousel-item{
+	width:  940px;
+	height: 300px;
+}
+.jcarousel-skin-ippo .jcarousel-item{
+	margin-left: 0;
+	margin-right: 5px;
+}
+
+.jcarousel-skin-ippo .jcarousel-prev,
+.jcarousel-skin-ippo .jcarousel-next{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 940px;
+	height: 300px;
+	cursor: pointer;
+	background: url("/lib/images/home/fade.png") 100% 0 no-repeat;
+	-webkit-transition: background-position .3s;
+	-moz-transition: background-position .3s;
+	-o-transition: background-position .3s;
+	-ms-transition: background-position .3s;
+	transition: background-position .3s;
+}
+.jcarousel-skin-ippo .jcarousel-prev{
+	left: 0;
+	background-position: 0 0;
+}
+
+.jcarousel-skin-ippo .jcarousel-prev:hover{ background-position: 100% 0; }
+.jcarousel-skin-ippo .jcarousel-next:hover{ background-position: 0 0; }
+
+
+/*=== Blog Articles
+==============================================================================================*/
+.article-list li{
+	margin: 0 0 .5em;
+	padding: 0;
+}
+.article-list a{ font-size: 1.167em; }
+.article-list time{ font-size: .917em; }
+
+
+/*=== Home Sidebar
+==============================================================================================*/
+.page-home .widget_links ul{
+	text-align: left;
+	list-style: none;
+	margin: 0 0 1em;
+	padding: 0;
+	font-size: 1.167em;
+}
+.page-home .widget_links img{ display: block; margin-bottom: .5em; *margin-top: -10px; }

@@ -1,0 +1,77 @@
+
+.dyn-dropdown{
+	position: relative;
+	_behavior: url(/wwwimages/lib/htc/hover.htc);
+	z-index: 2;
+}
+.dyn-dropdown>li{
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.dyn-dropdown li{
+	list-style-type: none;
+	_position: relative;
+	_top: 0;
+	_left: 0;
+}
+.dyn-dropdown li li{
+	_position: static;
+}
+.dyn-dropdown .dropdown-pane{
+	position: absolute;
+	top: 47px;
+	left: 0;
+	z-index: 2;
+	display: none;
+	margin-top: 0;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.dyn-dropdown .dropdown-pane>*{
+	margin: 0;
+}
+.dyn-dropdown .dropdown-pane dt,
+.dyn-dropdown .dropdown-pane dd,
+.dyn-dropdown .dropdown-pane li{
+	_margin: 0;
+	text-align: left;
+}
+.dyn-dropdown .dropdown-pane a{
+	-moz-outline: none;
+}
+.dyn-dropdown li.hover .dropdown-pane{
+	display: block !important;
+}
+.dyn-dropdown>li:hover .dropdown-pane{
+	display: block !important;
+}
+.dyn-dropdown .dropdown-tab{
+	/*\*/display: block; 
+	/*/display: inline-block;/**/
+	_display: inline;
+	_zoom: 1;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+/**** Tier 1
+/**********************************************************************************************/
+	.dyn-dropdown .dropdown-pane>*{
+		margin: 0;
+	}
+	.dyn-dropdown .dropdown-pane dt,
+	.dyn-dropdown .dropdown-pane dd,
+	.dyn-dropdown .dropdown-pane li{
+		_margin: 0;
+	}
+	.dyn-dropdown .dropdown-pane a{
+		margin: 0 1px;
+		-moz-outline: none;
+	}
+	.dyn-dropdown .dropdown-tab{ 
+		min-height: 16px;
+		_height: 16px;
+	}

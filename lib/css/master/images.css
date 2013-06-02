@@ -1,0 +1,127 @@
+
+/**** Icons
+/**********************************************************************************************/
+	.icon-accept{ background-image: url("/lib/images/icons/fam3/accept.png"); }
+	.icon-add{ background-image: url("/lib/images/icons/fam3/add.png"); }
+	.icon-alert{ background-image: url("/lib/images/icons/fam3/error.png"); }
+	.icon-call{ background-image: url("/lib/images/icons/fam3/phone.png"); }
+	.icon-cross{ background-image: url("/lib/images/icons/fam3/cross.png"); }
+	.icon-delete{ background-image: url("/lib/images/icons/fam3/delete.png"); }
+	.icon-email{ background-image: url("/lib/images/icons/fam3/email.png"); }
+	.icon-feed{ background-image: url("/lib/images/icons/fam3/feed.png"); }
+	.icon-info{ background-image: url("/lib/images/icons/fam3/infomation.png"); }
+	.icon-map{ background-image: url("/lib/images/icons/fam3/map.png"); }
+	.icon-print{ background-image: url("/lib/images/icons/fam3/printer.png"); }
+	.icon-rss{ background-image: url("/lib/images/icons/fam3/rss.png"); }
+	.icon-star{ background-image: url("/lib/images/icons/fam3/star.png"); }
+	.icon-zoom{ background-image: url("/lib/images/icons/fam3/magnifier.png"); }
+	
+	.icon-swf-file{ background-image: url("/lib/images/icons/fam3/flash.png"); }
+	.icon-pdf-file{ background-image: url("/lib/images/icons/fam3/pdf.png"); }
+	
+	.icon-big.icon-bubble{ background-image: url("/lib/images/icons/big/blue_bubble.png"); }
+	.icon-big.icon-comment{ background-image: url("/lib/images/icons/big/comment.png"); }
+	.icon-big.icon-feed{ background-image: url("/lib/images/icons/big/feed.png"); }
+	.icon-big.icon-mail{ background-image: url("/lib/images/icons/big/mail.png"); }
+	.icon-big.icon-phone{ background-image: url("/lib/images/icons/big/phone.png"); }
+	
+/**** Icon Replace
+/**********************************************************************************************/
+	.icon{
+		padding-left: 20px !important;
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-position-y: top;
+	}
+	.icon-big{
+		display: block;
+		padding-left: 54px !important;
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-position-y: top;
+		line-height: 48px;
+		min-height: 48px;
+	}
+	a.icon,
+	span.icon,
+	li.icon{
+		_zoom: 1;
+	}
+	a.icon:not([className~=icon]),
+	span.icon:not([className~=icon]){
+		display: inline-block;
+		vertical-align: bottom;
+	}
+	li.icon,
+	p.icon{
+		background-position: left center;
+	}
+	button.icon-replace{
+		-moz-outline: none;
+		padding: 0;
+		border-style: none;
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.icon-replace{
+		background-repeat: no-repeat;
+		background-position: center center;
+		display: inline;
+		display: inline-block;
+		display: -moz-inline-box;
+		_display: inline;
+		zoom: 100%;
+		width: 24px;
+		padding: 0 !important;
+		overflow: hidden;
+		white-space: nowrap;
+		text-align: left;
+		word-spacing: -2ex;
+		letter-spacing: -2ex;
+		min-height: 16px;
+		_height: 16px;
+		color: transparent;
+		_font: 1px/0 monospace;
+		_word-spacing: -2px;
+		_letter-spacing: -2px;
+	}
+	button.icon-replace,
+	th.icon-replace,
+	td.icon-replace{
+		_color: #fff;
+	}
+	button[className~=icon-replace],
+	th[className~=icon-replace],
+	td[className~=icon-replace]{
+		color: #fff;
+	}
+	[className~=icon-replace]{
+		font: 1px/0 monospace !important;
+		word-spacing: -2px;
+		letter-spacing: -2px;
+	}
+	a.icon-replace{
+		vertical-align: bottom;
+	}
+	th.icon-replace,
+	td.icon-replace{
+		display: table-cell;
+		background-position: center center;
+		width: auto;
+	}
+	@media screen and (-op-browser){
+		a.icon-replace,
+		span.icon-replace{
+			text-indent: 100%;
+		}
+		th.icon-replace,
+		td.icon-replace{
+			letter-spacing: normal;
+		}
+		th.icon-replace:before,
+		td.icon-replace:before{
+			content: "\0020";
+			margin-left: -100%;
+		}
+	}

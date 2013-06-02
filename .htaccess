@@ -1,0 +1,75 @@
+AddDefaultCharset UTF-8
+php_value mbstring.language Japanese
+php_value mbstring.internal_encoding UTF-8
+
+Order deny,allow
+Allow from all
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(creasty\.com)(:80)? [NC]
+RewriteRule ^(.*)$ http://www.creasty.com/$1 [R=301,L]
+RewriteRule /favicon.ico$ /favicon.ico [L]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+
+Options -Indexes +Includes
+DirectoryIndex index.html index.php index.do
+
+
+AddType application/rss+xml .rss
+AddType image/x-icon .ico
+AddType text/x-component .htc
+AddType application/vnd.ms-fontobject eot
+AddType font/opentype otf
+AddType font/truetype ttf
+AddType application/x-font-woff woff
+# AddHandler server-parsed .html
+
+
+ErrorDocument 401 /
+ErrorDocument 403 /
+ErrorDocument 500 /
+
+
+AddOutputFilter DEFLATE .js .css
+
+<ifModule mod_expires.c>
+#ExpiresActive On
+#ExpiresDefault "access plus 60 seconds"
+# 30 days
+#ExpiresByType image/gif "access plus 2592000 seconds"
+#ExpiresByType image/jpeg "access plus 2592000 seconds"
+#ExpiresByType image/png "access plus 2592000 seconds"
+#ExpiresByType image/x-icon "access plus 2592000 seconds"
+# 7 days
+#ExpiresByType text/css "access plus 604800 seconds"
+# 2.5 days
+#ExpiresByType text/javascript "access plus 216000 seconds"
+#ExpiresByType application/x-javascript "access plus 216000 seconds"
+</ifModule>
+
+<FilesMatch "^(wp-config|wp-mail|install)\.php">
+	order allow,deny
+	deny from all
+</FilesMatch>
+
+<Files ~ "^\.ht">
+	deny from all
+</Files>
+
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

@@ -1,0 +1,180 @@
+
+/*=== Global Header
+==============================================================================================*/
+#globalheader{
+	background: url("/lib/images/template/gnav/header-footer.png") repeat-x;
+}
+#globalheader .inner{
+	height: 136px;
+	width: 940px;
+	position: relative;
+	margin: 0 auto;
+}
+
+
+/*=== Banner
+==============================================================================================*/
+#head-banner{
+	display: block;
+	position: absolute;
+	top: 16px;
+	right: 0;
+	width: 218px;
+	height: 48px;
+	padding: 6px 0;
+	color: #fff;
+	font-size: 1.167em;
+	line-height: 1.5;
+	text-align: center;
+	background: url("/lib/images/template/gnav/banner.png") no-repeat;
+	text-shadow: 0 -1px 0 #8e0000;
+	-moz-transition: top .2s;
+	-webkit-transition: top .2s;
+	-o-transition: top .2s;
+	-ms-transition: top .2s;
+	transition: top .2s;
+}
+#head-banner:hover{
+	top: 14px;
+	text-decoration: none;
+}
+
+
+/*=== Logo
+==============================================================================================*/
+#ippojuku-logo{
+	position: absolute;
+	top: 18px;
+	left: -3px;
+	margin: 0;
+	padding: 0;
+	z-index: 100;
+}
+#ippojuku-logo a{
+	display: block;
+	width: 200px;
+	height: 52px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: url("/lib/images/template/gnav/IppoJuku.png") no-repeat;
+}
+
+
+/*=== Site Menu
+==============================================================================================*/
+#gnav-site-menu{
+	position: absolute;
+	top: 89px;
+	left: -12px;
+	z-index: 2;
+	margin: 0;
+	padding: 0;
+}
+#gnav-site-menu li{
+	position: relative;
+	z-index: 4;
+	margin: 0;
+	padding: 0;
+}
+#gnav-site-menu li:hover{ z-index: 5; }
+#gnav-site-menu .dropdown-tab{
+	display: block;
+	font-size: 14px;
+	line-height: 14px;
+	position: relative;
+	z-index: 8;
+	color: #fff;
+	min-height: 32px;
+	padding: 6px 12px;
+	vertical-align: bottom;
+	white-space: nowrap;
+	text-shadow: 0 1px 0 #122e43;
+}
+#gnav-site-menu .dropdown-tab span{
+	color: #88a6d0;
+	font-size: 10px;
+	line-height: 10px;
+	*line-height: 16px;
+}
+#gnav-site-menu > li:hover .dropdown-tab{
+	background: url("/lib/images/template/gnav/header-footer.png") repeat-x 0 -136px;
+	text-decoration: none;
+}
+#gnav-site-menu .dropdown-pane{
+	position: absolute;
+	top: 57px;
+	*top: 44px;
+	display: none;
+	z-index: 7;
+	padding: 0 0 14px;
+	margin: 0;
+	margin-left: -8px;
+	font-size: .917em;
+	width: 228px;
+	background: url("/lib/images/template/gnav/dropdown_panel.png") no-repeat 0 100%;
+	z-index: 9;
+}
+#gnav-site-menu .dropdown-pane:before{
+	content: "";
+	display: block;
+	background: url("/lib/images/template/gnav/dropdown_panel.png") no-repeat 0 0;
+	width: 228px;
+	height: 22px;
+	position: absolute;
+	top: -22px;
+}
+#gnav-site-menu li:hover .dropdown-pane{
+	display: block !important;
+}
+#gnav-site-menu .dropdown-pane li{
+	display: block;
+	padding: 0 8px;
+	margin: 0;
+}
+#gnav-site-menu .dropdown-pane a{
+	display: block;
+	margin: 0;
+	padding: 8px 12px;
+	line-height: 14px;
+	color: #003f8e;
+	text-shadow: 0 1px 0 #fff;
+	-moz-transition: padding .2s;
+	-webkit-transition: padding .2s;
+	-o-transition: padding .2s;
+	-ms-transition: padding .2s;
+	transition: padding .2s;
+}
+#gnav-site-menu .dropdown-pane a:hover{
+	color: #8e0000;
+	text-decoration: none;
+	padding-left: 17px;
+}
+#gnav-site-menu .dropdown-pane a:hover:after{
+	content: "\0020>";
+}
+
+
+/*=== Global Footer
+==============================================================================================*/
+#globalfooter{
+	position: relative;
+	z-index: 3;
+	font-size: 0.917em;
+	padding: 20px 0;
+	text-align: left;
+	background: url("/lib/images/template/gnav/header-footer.png") repeat-x 0 -204px;
+}
+
+#globalfooter .inner{
+	margin: 0 auto;
+	width: 940px;
+}
+
+#globalfooter a{ color: #555; }
+#globalfooter a:hover{ color: #000; text-decoration: none; }
+
+#globalfooter p{
+	margin-bottom: 0.3em;
+	color: #888;
+}

@@ -1,0 +1,26 @@
+<?php
+	header( 'Content-Type: text/css' );
+?>
+@charset "UTF-8";
+
+/*	MASTER
+	Copyright 2012 Creasty. All rights reserved.
+----------------------------------------------------------------------------------------------------*/
+
+/** 
+ * Reset CSS
+ * 
+ * @author ykiwng
+ */
+<?php readfile( 'resetcss.min.css' ); ?>
+
+<?php
+	readfile( 'master/themes.css' );
+	readfile( 'master/globalnav.css' );
+
+	readfile( 'master/typography.css' );
+	readfile( 'master/elements.css' );
+	readfile( 'master/grid.css' );
+	readfile( 'master/images.css' );
+	
+?>

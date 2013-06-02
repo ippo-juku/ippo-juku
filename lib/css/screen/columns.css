@@ -1,0 +1,107 @@
+
+/*	COLUMNS
+	Import Screen CSS
+	$Id: columns.css, v1.2 2009/06/27 16:03:45 ykiwng Exp $
+--------------------------------------------------*/
+
+
+/**** Columns Box
+/**********************************************************************************************/
+	#C1,
+	#C2,
+	#C3,
+	#C4{
+		zoom: 1;
+		width: 100%;
+	}
+	#C1:after,
+	#C2:after,
+	#C3:after,
+	#C4:after{
+		content: "\0020";
+		display: block;
+		visibility: hidden;
+		height: 0.1px;
+		font-size: 0.1em;
+		line-height: 0;
+		clear: both;
+	}
+
+/**** Layout Columns
+/**********************************************************************************************/
+	/*	< Columns Balance >
+		Columns-1-A-A
+		
+		Columns-2-AB-{A,B}			balanced
+		Columns-2-Ab-{A,b}			left-weight
+		Columns-2-aB-{a,B}			right-weight
+		
+		Columns-3-ABC-{A,B,C}		balanced
+		Columns-3-ABc-{A,B,c}		left-weight
+		Columns-3-aBC-{a,B,C}		right-weight
+		Columns-3-aBc-{a,B,c}		center-weight
+		
+		Columns-4-ABCD-{A,B,C,D}	balanced
+	*/
+	.Columns-4-ABCD-A,
+	.Columns-4-ABCD-B,
+	.Columns-4-ABCD-C,
+	.Columns-3-ABC-A,
+	.Columns-3-ABC-B,
+	.Columns-3-ABc-A,
+	.Columns-3-ABc-B,
+	.Columns-3-aBC-a,
+	.Columns-3-aBC-B,
+	.Columns-3-aBc-a,
+	.Columns-3-aBc-B,
+	.Columns-2-aB-a,
+	.Columns-2-Ab-A,
+	.Columns-2-AB-A{float: left}
+	.Columns-4-ABCD-D,
+	.Columns-3-ABC-C,
+	.Columns-3-ABc-c,
+	.Columns-3-aBc-c,
+	.Columns-3-aBC-C,
+	.Columns-2-Ab-b,
+	.Columns-2-aB-B,
+	.Columns-2-AB-B{float: right}
+	/**** Size
+	/**********************************************/
+	.Columns-2-AB-A,
+	.Columns-2-AB-B{width: 48.5%}
+	.Columns-2-Ab-A,
+	.Columns-2-aB-B{width: 71%}
+	.Columns-2-Ab-b,
+	.Columns-2-aB-a{width: 26%}
+	.Columns-3-ABC-A,
+	.Columns-3-ABC-B,
+	.Columns-3-ABC-C{width: 30%}
+	.Columns-3-ABC-B{margin-left: 5%}
+	/* Safari floors percentages instead of rounding, so this helps with balanced columns \*/
+	::root .Columns-3-ABC-B,
+	::root .Columns-3-aBC-B,
+	::root .Columns-3-ABc-B,
+	::root .Columns-3-aBc-B,
+	::root .Columns-4-ABCD-B,
+	::root .Columns-4-ABCD-C{
+		position: relative;
+		left: 1px;
+	}/**/
+	.Columns-3-ABc-A,
+	.Columns-3-ABc-B,
+	.Columns-3-aBC-B,
+	.Columns-3-aBC-C{width: 34%}
+	.Columns-3-ABc-c,
+	.Columns-3-aBC-a,
+	.Columns-3-aBc-a,
+	.Columns-3-aBc-c{width: 26%}
+	.Columns-3-ABc-B,
+	.Columns-3-aBC-B,
+	.Columns-3-aBc-B{margin-left: 3%}
+	.Columns-3-aBc-B{width: 42%}
+	.Columns-4-ABCD-A,
+	.Columns-4-ABCD-B,
+	.Columns-4-ABCD-C,
+	.Columns-4-ABCD-D{width: 22%}
+	.Columns-4-ABCD-B,
+	.Columns-4-ABCD-C{margin-left: 4%}

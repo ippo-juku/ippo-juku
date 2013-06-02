@@ -1,0 +1,71 @@
+
+/*=== Base Template
+==============================================================================================*/
+.dyn-tabnav{ margin-bottom: 1.5em; }
+
+.tab-title,
+.tab-content{ display: none; }
+.tab-content.show{ display: block; }
+
+.tab-menu{
+	display: block;
+	word-spacing: -1ex;
+	letter-spacing: -1ex;
+	margin: 0 0 1.5em;
+	zoom: 1;
+}
+.tab-menu li{
+	zoom: 1;
+	display: inline-block;
+	*display: inline;
+	cursor: pointer;
+	
+	padding-bottom: 0;
+	word-spacing: 0;
+	letter-spacing: 0;
+	background-repeat: no-repeat;
+	vertical-align: /*\*/ bottom /*/ baseline /**/;
+}
+.tab-menu li.active{ cursor: default; }
+
+
+/*=== Zen
+==============================================================================================*/
+.tabnav-zen .tab-menu{
+	margin: .5ex 0 1em;
+	text-align: left;
+	padding: 0;
+	border-bottom: 1px solid #003f8e;
+}
+
+.tabnav-zen .tab-menu li{
+	margin: 5px 5px -1px 0;
+	padding: 3px 12px;
+	color: #809fc7;
+	border-width: 1px 1px 0;
+	border-style: solid;
+	border-color: transparent;
+	font-size: 1.167em;
+	-moz-border-radius: 3px 3px 0 0;
+	-webkit-border-radius: 3px 3px 0 0;
+	-o-border-radius: 3px 3px 0 0;
+	-ms-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+	-moz-transition: all .2s;
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
+	-ms-transition: all .2s;
+	transition: all .2s;
+}
+
+.tabnav-zen .tab-menu li:hover{
+	background: #fff;
+	border-color: #809fc7;
+}
+.tabnav-zen .tab-menu li.active,
+.tabnav-zen .tab-menu li.active:hover{
+	background: #fff;
+	color: #003f8e;
+	border-color: #003f8e;
+}
+

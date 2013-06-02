@@ -1,0 +1,549 @@
+
+/**** Menu
+/**********************************************************************************************/
+	.menu{
+		display: block;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 1em;
+		zoom: 1;
+		_height: 1em;
+	}
+	.menu{
+		word-spacing: -1ex;
+		letter-spacing: -1ex;
+		line-height: 0;
+	}
+	.menu *{
+		word-spacing: normal;
+		letter-spacing: normal;
+		line-height: 1.25;
+	}
+	.menu>*,
+	.menu>* a{
+		display: inline;
+		display: inline-block;
+		display: -moz-inline-box;
+		zoom: 1;
+	}
+	[className~=menu]>*,
+	[className~=menu]>* a{display: inline;}
+	/* Safari 3.0 not wrapping pipe menu items if it goes past the page width */
+	body:first-of-type .menu.pipe>*{
+		display: block;
+		float: left;
+	}
+	body:first-of-type .pipe:after{
+		content:"\0020";
+		clear: both;
+		display: block;
+		height: 0;
+	}
+	.menu li,
+	.menu dt,
+	.menu dd,
+	.menu li a,
+	.menu dd a,
+	.menu dt a{
+		_display: inline;
+		_zoom: 1;
+	}
+	.menu * li,
+	.menu * dd,
+	.menu * dt,
+	.menu * li a,
+	.menu * dd a,
+	.menu * dt a{_display: inline-block;}
+	.menu li,
+	.menu dd,
+	.menu dt{
+		padding-bottom: 0;/* unfortunately <LI> is globally redefined to have padding bottom. I need to override that here */
+		_display: inline;
+	}
+	.menu li a,
+	.menu dd a,
+	.menu dt a{vertical-align: /*\*/ bottom /*/ baseline /**/;}
+	.menu .selected{
+		padding: .1em 0.8ex;
+		margin-left: 0;
+	}
+	.menu .first{padding-left: 0;}
+
+/**** Compact - float child elements, clear floats
+/**********************************************************************************************/
+	.compact{
+		/*\*//*/display: inline-table;/**/
+		padding-bottom: 1px;
+		_behavior: url(/wwwimages/lib/htc/compactWsFix.htc);
+	}
+	.compact>*{float: left}
+	.compact:after{
+		content: "\0020";
+		visibility: hidden;
+		display: block;
+		height: 0;
+		clear: both;
+	}
+	.compact>p,
+	.compact>span{
+		margin-right: 1ex;
+		margin-bottom: 0;
+		padding: 0;
+	}
+	dl.compact>dd{margin-left: 0}
+	ul.compact li,
+	ol.compact li,
+	dl.compact dd,
+	div.compact p{
+		_display: inline;
+		_float: left;
+	}
+	dl.compact * dd ol.compact * li,
+	ul.compact * li,
+	div.compact * p{
+		_display: block;
+		_float: none;
+	}
+	dl.compact dd{_margin-left: 0}
+	div.compact p{
+		_margin-right: 1ex;
+		_margin-bottom: 0;
+		_padding: 0;
+	}
+	h3.compact span,
+	h4.compact span{
+		_float: left;
+		_margin-right: 1ex;
+	}
+	h3.compact span span,
+	h4.compact span span{
+		_float: none;
+		_margin-right: 0;
+	}
+
+/**** Pipe
+/**********************************************************************************************/
+	ul.pipe{list-style-type: none;}
+	.pipe li{
+		background-repeat: no-repeat;
+		background-position: left center;
+	}
+	.pipe li a{
+		padding: 0.1em 1ex;
+		vertical-align: baseline;/* mostly for Opera */
+	}
+	.pipe li+li{
+		background-image: url(/wwwimages/lib/images/html/pipe2.png);
+		padding-left: 1px;
+	}
+
+/**** Depth Path
+/**********************************************************************************************/
+	#DepthPath{
+		position: absolute;
+		display: block;
+		padding: 4px 12px 3px 12px;
+		margin: 0;
+		z-index: 2;
+		background: #85b8ff;
+	}
+	#DepthPath a{
+		color: #3a6cb1;
+	}
+	#DepthPath a:hover{
+		color: #003f8e;
+		text-decoration: none;
+	}
+
+/**** Border
+/**********************************************************************************************/
+	hr{
+		border: 0; /*clear default style*/
+		margin: 8px 0 0;
+		background: #cbcbcb;
+		color: #cbcbcb;
+		height: 3px;
+	}
+	hr.no-margin{margin: 0;}
+	hr.dashed{border-style: dashed;}
+	hr.hr-c3c8cb-3{
+		background: #c3c8cb;
+		color: #c3c8cb;
+	}
+
+/**** Pullout
+/**********************************************************************************************/
+	.pullout-left,
+	.pullout-right{
+		zoom: 1;
+		position: relative;
+	}
+	.pullout-left:after,
+	.pullout-right:after{
+		content: "\0020";
+		visibility: hidden;
+		clear: both;
+		display: block;
+		height: 0;
+	}
+	.pullout-item img{margin-right: 0}
+	.pullout-left .pullout-item{
+		float: left;
+		margin-left: 0 !important;
+	}
+	.pullout-right .pullout-item{
+		float: right;
+		margin-right: 0 !important;
+	}
+	div.pullout-wrap>*{margin-left: 0;}
+	div.left-wrap>.pullout-item{margin-right: 10px;}
+	div.right-wrap>.pullout-item{margin-left: 10px;}
+	.po-L230 .pullout-item,
+	.po-R230 .pullout-item{width: 230px;}
+	.po-L180 .pullout-item,
+	.po-R180 .pullout-item{width: 180px;}
+	.po-L125 .pullout-item,
+	.po-R125 .pullout-item{width: 125px;}
+	.po-L112 .pullout-item,
+	.po-R112 .pullout-item{width: 112px;}
+	.po-L100 .pullout-item,
+	.po-R100 .pullout-item{width: 100px;}
+	.po-L90 .pullout-item,
+	.po-R90 .pullout-item{width: 90px;}
+	.po-L80 .pullout-item,
+	.po-R80 .pullout-item{width: 80px;}
+	.po-L72 .pullout-item,
+	.po-R72 .pullout-item{width: 72px;}
+	.po-L71 .pullout-item,
+	.po-R71 .pullout-item{width: 71px;}
+	.po-L51 .pullout-item,
+	.po-R51 .pullout-item{width: 51px;}
+	.po-L60 .pullout-item,
+	.po-R60 .pullout-item{width: 60px;}
+	.po-L50 .pullout-item,
+	.po-R50 .pullout-item{width: 50px;}
+	.po-L40 .pullout-item,
+	.po-R40 .pullout-item{width: 40px;}
+	.po-L15 .pullout-item,
+	.po-R15 .pullout-item{width: 15px;}
+	.po-L230>*{margin-left: 240px;}
+	.po-R230>*{margin-right: 240px;}
+	.po-L180>*{margin-left: 190px;}
+	.po-R180>*{margin-right: 190px;}
+	.po-L125>*{margin-left: 135px;}
+	.po-R125>*{margin-right: 135px;}
+	.po-L112>*{margin-left: 122px;}
+	.po-R112>*{margin-right: 122px;}
+	.po-L100>*{margin-left: 110px;}
+	.po-R100>*{margin-right: 110px;}
+	.po-L90>*{margin-left: 100px;}
+	.po-R90>*{margin-right: 100px;}
+	.po-L80>*{margin-left: 90px;}
+	.po-R80>*{margin-right: 90px;}
+	.po-L72>*{margin-left: 82px;}
+	.po-R72>*{margin-right: 82px;}
+	.po-L71>*{margin-left: 81px;}
+	.po-R71>*{margin-right: 81px;}
+	.po-L60>*{margin-left: 70px;}
+	.po-R60>*{margin-right: 70px;}
+	.po-L50>*{margin-left: 60px;}
+	.po-R50>*{margin-right: 60px;}
+	.po-L51>*{margin-left: 61px;}
+	.po-R51>*{margin-right: 61px;}
+	.po-L40>*{margin-left: 50px;}
+	.po-R40>*{margin-right: 50px;}
+	.po-L15>*{margin-left: 23px;}
+	.po-R15>*{margin-right: 23px;}
+
+/**** List Tag
+/**********************************************************************************************/
+	ul,
+	ol,
+	dl{
+		word-spacing: -2ex;
+		letter-spacing: -2ex;
+		line-height: 0;
+	}
+	dt,
+	dd,
+	li{
+		word-spacing: normal;
+		letter-spacing: normal;
+	}
+	ol,
+	li,
+	li ol,
+	li ul{font-size: 1em;}
+	ul{
+		list-style-type: disc;
+		margin-left: 1ex;
+	}
+	ul,
+	ol{
+		padding-left: 2.5ex;
+		margin-top: 1em;
+		margin-bottom: 1.35em;
+	}
+	li{
+		line-height: 1.25em;
+		padding-bottom: 0.5em;
+	}
+	ol{
+		list-style-type: decimal;
+		overflow: visible;
+		margin-left: 3ex;
+		_padding-left: 6ex;
+	}
+	ol ol{
+		list-style-type: lower-alpha;
+		margin-left: 0.5ex;
+		_margin-left: 1.5ex;
+	}
+	ol ol ol{list-style-type: lower-roman;}
+	li ol,
+	li ul{
+		margin-top: 0;
+		margin-bottom: 0.3ex;
+	}
+	li p{margin-bottom: 0.5em;}
+	dt,
+	dd{line-height: 1.5em;}
+	dt{
+		font-weight: bold;
+		margin-bottom: 1em;
+		margin-top: 0.5em;
+	}
+	dl,
+	dd{margin-bottom: 1.5em;}
+	dd{margin-left: 16px;}
+	
+	.link-list{
+		text-align: left;
+		list-style: none;
+		margin: 0 0 1em;
+		padding: 0;
+	}
+	.link-list > *{
+		margin: 1px 1.5ex 1px 0;
+		line-height: 1.333em;
+	}
+	.link-list>li,
+	.link-list>dt{padding: 2px 0;}
+	.link-list>dd{padding-left: 1.25ex;}
+	.link-list li,
+	.link-list dt{_padding: 0.15em 0 0.2em;}
+	.link-list dd{_padding-left: 1.25ex;}
+	.link-list li,
+	.link-list dt,
+	.link-list dd{
+		_margin: 1px 1.5ex 1px 0;
+		_line-height: 1.35em;
+	}
+	
+	.nomarker{
+		list-style-image: none;
+		list-style-type: none;
+	}
+	
+	ol.path{list-style-type: none;}
+	.path:after{
+		content: "\0020";
+		clear: both;
+		display: block;
+		height: 0;
+	}
+	.path>li{
+		display: inline;
+		float: left;
+		_float: none;
+	}
+	[className~=path]>li{float: none;}
+	.path li:after{
+		content: ">";
+		color: #bdd9ff;
+		font-weight: normal;
+		margin-right: 1ex;
+	}
+	ol.path li a{
+		htc-method: "$addTextToNode[ >,after,fontWeight normal]";
+		behavior: url("/wwwimages/lib/htc/evaluateCss.htc");
+	}
+	.path li a{padding: 0.1em 1ex .1em 0;}
+	
+	ul.buttonList li{
+		font-size: 11px;
+		_font-size: 9.25px;
+		margin-bottom: 0.5em;
+	}
+
+/**** Phrase Elements
+/**********************************************************************************************/
+	code,
+	kbd,
+	pre,
+	samp{
+		/*\*/font-family: "Courier New", Courier, monospace;
+		/*/font-family: Courier, monospace;/**/
+	}
+	html>body code,
+	html>body pre,
+	html>body samp,
+	html>body kbd{
+		font-size: 12px;
+		font-weight: inherit;
+	}
+	code:empty,
+	kbd:empty,
+	pre:empty,
+	samp:empty{font-family: Courier,monospace;}
+	abbr,
+	address,
+	acronym,
+	cite{
+		font-style: normal;
+		border-bottom-style: hidden;
+	}
+	code,
+	pre{color: #000;}
+	pre{line-height: 1.333;}
+	code{background-color: #E6F0FA;}
+	del{color: #000;}
+	blockquote{margin: 0 0 1.5em;}
+	blockquote,
+	address{line-height: 1.33;}
+	blockquote.pullquote{
+		color: #333;
+		border-bottom: 1px solid #ccc;
+		border-top: 1px solid #ccc;
+		padding: 1.25em 0;
+	}
+	blockquote.indent{margin: 0 32px 1.5em;}
+	address{width: auto;}
+	abbr{cursor: help;}
+	sup{_margin-top: -0.35em;}
+	*:first-child+html sup{display: inline-block;}
+
+/**** Custom Phrase Elements
+/**********************************************************************************************/
+	.new{
+		color: #aa2222;
+		font-weight: bold;
+		font-size: 0.917em;
+		display: inline-block;
+		display: -moz-inline-box;
+		_display: inline;
+		_height: 1em;
+		position: relative;
+		top: -0.5ex;
+	}
+	.caption{
+		color: #888;
+		margin-top: 0.8em;
+		font-size: 0.917em;
+		line-height: 1.3;
+	}
+	p.caption{margin-top: 0.5em;}
+	.required{color: #CC0001;}
+	.achtung{color: #aa2222 !important;}
+	.call-action,
+	.rating{font-weight: bold;}
+	.suggestion{font-weight: normal;}
+	.msg-promo,
+	.promoHeader{font-size: 1.58em;}
+	.byline{font-size: 0.917em;}
+	.footnote,
+	.note,
+	.suggestion,
+	.stamp-fileinfo,
+	.article-date,
+	.stamp-date{color: #888;}
+	.stamp-download{color: #6c6c6c;}
+	.tag{border-bottom: 1px solid #ddd;}
+	.strikeout{text-decoration: line-through;}
+
+/**** clearx - Clear Float Elements
+/**********************************************************************************************/
+	/* .clearfix{zoom: 1;}
+	.clearfix:after{
+		content: "\0020";
+		display: block;
+		visibility: hidden;
+		height: 0.1px;
+		font-size: 0.1em;
+		line-height: 0;
+		clear: both;
+	} */
+	
+	br.clear-both,
+	div.clear-both,
+	br.clear-left,
+	div.clear-left{
+		font: 1px/1px monospace;
+		display: block;
+	}	
+	.clear-both{clear: both;}
+	.clear-left{clear: left;}
+	
+	.clear-after{zoom: 1;}
+	.clear-after:after{
+		content: "\0020";
+		display: block;
+		height: 0;
+		clear: both;
+	}
+
+/**** SWF Alternative
+/**********************************************************************************************/
+	.static-messaging{
+		border: 1px solid #D3D3D3;
+		background: #f5f7f7;
+		padding: 5px 5px 10px;
+		margin: 0 auto 1em;
+		min-height: 1em;
+		_height: 1em;
+		text-align: center;
+	}
+
+/**** Text alignments
+/**********************************************************************************************/
+	.txtleft{text-align: left !important;}
+	.txtright{text-align: right !important;}
+	.txtcenter{text-align: center !important;}
+
+/**** Options
+/**********************************************************************************************/
+	.scrollable{overflow: scroll;}
+	.hidden{visibility: hidden !important;display: none !important;}
+
+/**** FMA
+/**********************************************************************************************/
+	#fma{
+		background: #bfdeff;
+		margin: -3px 0 -129px;
+		text-align: center;
+	}
+	#fma-clip{
+		width: 935px;
+		height: 180px;
+		margin: 0 auto;
+		vartical-align: bottom;
+	}
+	#fma.no-pullin{
+		margin-bottom: -20px;
+	}
+	#Header.fma-pulled h1{
+		top: -23px;
+		background: url(/wwwimages/lib/images/html/blue_trans.png);
+		border: 0;
+		padding-top: 18px;
+		text-shadow: #000 2px 1px 2px;
+	}
+	#Header.fma-pulled #DepthPath{
+		background: none;
+		z-index: 4;
+	}
+	#Header.fma-pulled #DepthPath a,
+	#Header.fma-pulled #DepthPath a:hover{
+		color: #fff;
+		text-shadow: #000 2px 1px 2px;
+	}

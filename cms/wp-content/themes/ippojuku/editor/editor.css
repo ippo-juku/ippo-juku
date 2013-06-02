@@ -1,0 +1,59 @@
+
+body.mceContentBody{
+	font: 12px/1.75 "Open Sans", Arial, Helvetica, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo;
+	color: #444;
+	padding: 20px 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div{
+	outline: 1px dotted #ddd;
+}
+div:hover{
+	outline-color: #bbb;
+}
+
+p{
+	position: relative;
+}
+p:before{
+	content: '\00B6';
+	display: inline-block;
+	width: 10px;
+	color: #ddd;
+	font-size: 10px !important;
+	position: absolute;
+	left: -10px;
+}
+p:hover:before{
+	color: #bbb;
+}
+
+wp_protect{
+	display: block;
+	min-width: 16px;
+	min-height: 16px;
+	max-width: 100%;
+	overflow: hidden;
+	margin: 10px 0;
+	padding: 2px;
+	border: none !important;
+	background: #b44;
+	text-align: center;
+	cursor: default;
+	cursor: not-allowed;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+}
+wp_protect:after{
+	content: "HTMLで編集してください";
+	color: #fff;
+	font-size: 10px;
+}

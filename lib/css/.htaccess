@@ -1,0 +1,4 @@
+
+<Files master.css>
+	AddType application/x-httpd-php .css
+</Files>

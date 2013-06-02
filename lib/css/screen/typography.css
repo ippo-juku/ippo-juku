@@ -1,0 +1,136 @@
+
+/**** Hx
+/**********************************************************************************************/
+	h1,h2,h3{
+		font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", Georgia, "Times New Roman", Times;
+	}
+	h1{
+		position: absolute;
+		color: #fff;
+		background-color: #003f8e;
+		font-weight: bold;
+		font-size: 4.4em;
+		display: block;
+		padding: 3px 30px 2px 12px;
+		line-height: 1.25em;
+		margin-top: 0.45em;
+		z-index: 3;
+		border: 1px solid #305991;
+		border-left: 0;
+		background: url(/wwwimages/lib/images/html/h1.jpg) left center repeat-x;
+		text-shadow: #122e43 2px 1px 2px;
+	}
+	h2{
+		margin-bottom: 0.3em;
+		color: #003f8e;
+		font-size: 2.5em;
+		font-weight: normal;
+		padding-left: 15px;
+		background: url(/wwwimages/lib/images/html/h2.jpg) left center no-repeat;
+	}
+	h3{
+		margin-bottom: 0.4em;
+		color: #003f8e;
+		font-size: 2em;
+		font-weight: normal;
+	}
+	h4{
+		margin-bottom: 0.5em;
+		color: #003f8e;
+		font-size: 1.5em;
+		font-weight: normal;
+	}
+	h5{
+		font-size: 1.8em;
+		font-weight: normal;
+	}
+	
+	.hx-black{
+		color: #222;
+	}
+	.hx-black a,
+	.hx-black a:hover,
+	.hx-black a:visited{
+		color: #222 !important;
+		text-decoration: none !important;
+	}
+	
+	h1 span,
+	h2 span{
+		color: #2f71bf;
+		font-size: 0.8em;
+		font-weight: normal;
+		vertical-align: 0.2ex;
+	}
+	h1 span{
+		vertical-align: 0.2ex
+	}
+	h2 span{
+		vertical-align: 0.15ex;
+	}
+
+/**** Block
+/**********************************************************************************************/
+	p{
+		padding-bottom: 1px;
+		margin-bottom: 1.2em;
+		/** / line-height: 1.462; /**/
+	}
+
+/**** More links
+/**********************************************************************************************/
+	.link-more:after{
+		content: " >";
+	}
+	.link-back:before{
+		content: "<";
+		margin-right: 0.5ex;
+	}
+	.link-more{
+		htc-method: "$addTextToNode[ >,after]";
+		behavior: url("http://localhost:9201/wwwimages/lib/htc/evaluateCss.htc");
+	}
+	.link-back{
+		htc-method: "$addTextToNode[< ,before]";
+		behavior: url("http://localhost:9201/wwwimages/lib/htc/evaluateCss.htc");
+	}
+
+/**** Other
+/**********************************************************************************************/
+	.add{
+		color: #999;
+	}
+	span.light{
+		font-weight: bold;
+		color: #666;
+	}
+	.big{
+		font-size: 15px;
+	}
+	#ads p{
+		padding: 0px;
+		margin: 0px 5px 0px 5px;
+	}
+	.text-dropcap:first-letter{
+		float: left;
+		font-size: 3em;
+		line-height: 3em;
+		margin-right: 0.2em;
+		margin-top: 0.1em;
+	}
+	.note,
+	.stamp-fileinfo{
+		color: #999;
+		text-decoration: none;
+		background-color: none;
+	}
+	.price,
+	a .price{
+		color: #992222;
+	}
+	.camel-case{
+		word-spacing: -0.5ex;
+	}
+	.required{
+		color: #c00;
+	}

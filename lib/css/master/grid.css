@@ -1,0 +1,152 @@
+
+/**
+ * Fixed Grid System
+ * 
+ * Content Width: 940px
+ * Gutter Width: 20px
+ * Columns: 12
+ * 
+ */
+
+/*=== Columns
+==============================================================================================*/
+/*	< Column Layout Balance >
+
+	col-ab-{a,b}			balanced
+	col-Ab-{A,b}			left-weighted 1
+	col-AAb-{AA,b}			left-weighted 2
+	col-aB-{a,B}			right-weighted 1
+	col-aBB-{a,BB}			right-weighted 2
+	
+	col-abc-{a,b,c}			balanced
+	col-Abc-{A,b,c}			left-weighted
+	col-aBc-{a,B,c}			center-weighted
+	col-abC-{a,b,C}			right-weighted
+	
+	col-abcd-{a,b,c,d}		balanced
+	
+	col-abcde-{a,b,c,d,e}		balanced
+	
+*/
+
+.span-gutter,
+.col-ab-a,
+.col-aB-a, .col-Ab-A,
+.col-aBB-a, .col-AAb-AA,
+.col-abc-a, .col-abc-b,
+.col-abC-a, .col-abC-b, .col-aBc-a, .col-aBc-B, .col-Abc-A, .col-Abc-b,
+.col-abcd-a, .col-abcd-b, .col-abcd-c,
+.col-abcde-a, .col-abcde-b, .col-abcde-c, .col-abcde-d{
+	float: left;
+	margin-right: 20px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.span,
+.col-ab-b,
+.col-Ab-b, .col-aB-B,
+.col-AAb-b, .col-aBB-BB,
+.col-abc-c,
+.col-aBc-c, .col-Abc-c, .col-abC-C,
+.col-abcd-d,
+.col-abcde-e{
+	float: left;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.span-12{ width: 940px; }
+.span-11{ width: 860px; }
+.span-10{ width: 780px; }
+.col-AAb-AA,
+.col-aBB-BB,
+.span-9{ width: 700px; }
+.col-Ab-A,
+.col-aB-B,
+.span-8{ width: 620px; }
+.span-7{ width: 540px; }
+.col-ab-a,
+.col-ab-b,
+.col-Abc-A,
+.col-aBc-B,
+.col-abC-C,
+.span-6{ width: 460px; }
+.span-5{ width: 380px; }
+.col-Ab-b,
+.col-aB-a,
+.col-abc-a,
+.col-abc-b,
+.col-abc-c,
+.span-4{ width: 300px; }
+.col-AAb-b,
+.col-aBB-a,
+.col-Abc-b,
+.col-Abc-c,
+.col-aBc-a,
+.col-aBc-c,
+.col-abC-a,
+.col-abC-b,
+.col-abcd-a,
+.col-abcd-b,
+.col-abcd-c,
+.col-abcd-d,
+.span-3{ width: 220px; }
+.span-2{ width: 140px; }
+.span-1{ width: 60px; }
+
+/*	Extended Columns
+-----------------------------------------------*/
+.col-abcde-a,
+.col-abcde-b,
+.col-abcde-c,
+.col-abcde-d,
+.col-abcde-e{
+	width: 172px;
+}
+
+
+/*=== Pullout
+==============================================================================================*/
+.pullout-left,
+.pullout-right{ position: relative; zoom: 1; }
+.pullout-left:after,
+.pullout-right:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.pullout-item img{ margin-right: 0; }
+.pullout-left .pullout-item{
+	float: left;
+	margin-left: 0 !important;
+	margin-right: 20px;
+}
+.pullout-right .pullout-item{
+	float: right;
+	margin-right: 0 !important;
+	margin-left: 20px;
+}
+
+
+/*	Sizing
+-----------------------------------------------*/
+.pullout-left.po-130 > *{ margin-left: 150px; }
+.pullout-right.po-130 > *{ margin-right: 150px; }
+
+/*	TODO: make more
+.pullout-left.po- > *{ margin-left: px; }
+.pullout-right.po- > *{ margin-right: px; }
+*/
+
+/*	Icon sizes
+-----------------------------------------------*/
+.pullout-left.icon-32 > *{ margin-left: 52px; }
+.pullout-right.icon-32 > *{ margin-right: 52px; }
+.pullout-left.icon-64 > *{ margin-left: 84px; }
+.pullout-right.icon-64 > *{ margin-right: 84px; }

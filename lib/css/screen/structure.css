@@ -1,0 +1,67 @@
+/**** Side Menu
+/**********************************************************************************************/
+	#pocket-body{float: left;}
+	#pocket-side{
+		float: right;
+		height: 100%;
+		position: relative;
+	}
+	
+	#pocket-body{width: 74%;}
+	#pocket-side{width: 24%;}
+	
+	.side-menu,
+	#pocket-side{zoom: 1;}
+	.side-menu:after,
+	#pocket-side:after{
+		content: "\0020";
+		clear: both;
+		display: block;
+		height: 0;
+	}
+	.side-menu,
+	#pocket-side{
+		margin-bottom: 1em;
+		padding: 10px 8px;
+		zoom: 1;
+		background-color: #eee;
+		border: solid 1px #ddd;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+	}
+	
+	.side-menu a,
+	#pocket-side a{
+		display: block;
+		width: 100%;
+	}
+	.side-menu a:hover,
+	#pocket-side a:hover{
+		color: #cc0000;
+		text-decoration: none;
+	}
+	.side-menu dl,
+	#pocket-side dl{
+		font-size: .917em;
+		margin: -6px 0 -10px;
+		*margin: 0 0 -9px;
+		padding: 0;
+	}
+	.side-menu dt,
+	#pocket-side dt{
+		margin-bottom: 7px;
+		line-height: 1.25;
+		padding-top: 7px;
+		border-top: 1px solid #ddd;
+		color: #111;
+	}
+	.side-menu dd,
+	#pocket-side dd{margin: 4px 0;}
+	.side-menu dl.treelist dt,
+	#pocket-side dl.treelist dt{
+		border-top: none;
+		padding-top: 1px;
+	}
+	.p4.p4-top h3{
+		border: none;
+	}

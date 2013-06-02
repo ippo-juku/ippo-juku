@@ -1,0 +1,203 @@
+
+@import url("/wwwimages/lib/module/dropdown.css");
+
+/**** Header
+/**********************************************************************************************/
+	.hide{display: none;}
+	#globalnav{
+		top: 0;
+		left: 0;
+		display: block;
+		z-index: 10;
+		margin: 0;
+		background: url(/wwwimages/lib/images/template/gnav/header.png) repeat-x;
+		height: 120px;
+		position: relative;
+	}
+	#globalnav-header{
+		height: 120px;
+		width: 935px;
+		position: relative;
+		top: 6px;
+		display: block;
+		z-index: 10;
+		margin: auto;
+	}
+
+/**** Logo
+/**********************************************************************************************/
+	#globalnav #ippo-logo{
+		position: absolute;
+		top: 6px;
+		left: -2px;
+		z-index: 3;
+		margin: 0;
+		padding: 0;
+	}
+	#ippo-logo a{
+		display: block;
+		width: 187px;
+		height: 48px;
+		background: url(/wwwimages/lib/images/template/gnav/IppoLogo-lq.png) no-repeat;
+	}
+	/* Support printing hi-quality, printable logo */
+	#ippo-logo img{
+		width: 0;
+		height: 0;
+		display: none;
+	}
+
+
+/**** Dropdown
+/**********************************************************************************************/
+	#site-menu{
+		position: absolute;
+		z-index: 2;
+		padding: 0;
+		margin: 0;
+		top: 66px;
+		left: -12px;
+		width: auto;
+		text-align: left;
+	}
+	#site-menu-dropdown{
+		position: relative;
+		margin: 0;
+		padding: 0;
+		display: block;
+		z-index: 3;
+		_behavior: url(/wwwimages/lib/htc/hover.htc);
+	}
+	#site-menu-dropdown li{
+		position: relative;
+		z-index: 4;
+		margin: 0;
+		padding: 0;
+	}
+	#site-menu-dropdown li:hover,
+	#site-menu-dropdown li.hover{z-index: 5;}
+	#site-menu-dropdown .dropdown-tab{
+		font-size: 14px;
+		line-height: 1em;
+		position: relative;
+		z-index: 8;
+		font-weight: bold;
+		color: #fff;
+		max-height: 45px;
+		padding: 10px 12px 15px;
+		*white-space: nowrap;
+		text-shadow: #122e43 0 1px 0;
+	}
+	#site-menu-dropdown .dropdown-tab span{
+		color: #5e90d5;
+		font-size: 10px;
+		line-height: 1.2em;
+	}
+	#site-menu-dropdown > li:hover .dropdown-tab{
+		background: url(/wwwimages/lib/images/template/gnav/linkhover.png) repeat-x;
+		text-decoration: none;
+		color: #003f8e;
+		text-shadow: #eff5ff 0 -1px 0;
+	}
+	#site-menu li.hover .dropdown-tab,
+	#site-menu li.hover .dropdown-tab:hover{
+		background: url(/wwwimages/lib/images/template/gnav/linkhover.png) repeat-x;
+		text-decoration: none;
+		color: #003f8e;
+		text-shadow: #eff5ff 0 -1px 0;
+	}
+	#site-menu-dropdown .dropdown-pane{
+		z-index: 7;
+		top: 45px;
+		padding: 0;
+		margin: 0;
+		margin-left: -1px;
+		font-size: .917em;
+		width: 170px;
+		border: solid 1px #003f8e;
+		border-top: 0;
+		background: #81b5ff;
+		
+		-webkit-border-bottom-left-radius: 6px;
+		-webkit-border-bottom-right-radius: 6px;
+		-moz-border-radius-bottomleft: 6px;
+		-moz-border-radius-bottomright: 6px;
+		
+		-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.5);
+		-moz-box-shadow: 0 1px 3px rgba(0,0,0,.5);
+		box-shadow: 0 1px 3px rgba(0,0,0,.5);
+	}
+	#site-menu-dropdown .dropdown-pane *:last-child > a{
+		-webkit-border-bottom-left-radius: 4px;
+		-webkit-border-bottom-right-radius: 4px;
+		-moz-border-radius-bottomleft: 4px;
+		-moz-border-radius-bottomright: 4px;
+	}
+	#site-menu-dropdown .dropdown-pane li,
+	#site-menu-dropdown .dropdown-pane dt,
+	#site-menu-dropdown .dropdown-pane dd{
+		display: block;
+		padding: 0;
+		margin: 0;
+	}
+	#site-menu-dropdown .dropdown-pane dt{
+		color: #000;
+		padding: 4px 10px 4px;
+	}
+	#site-menu-dropdown .dropdown-pane a{
+		display: block;
+		margin: 0;
+		padding: 8px 10px 8px;
+		*width: 150px;
+		line-height: 14px;
+		color: #003f8e;
+	}
+	#site-menu-dropdown .dropdown-pane a:hover{
+		color: #fff;
+		background: #003f8e;
+		background: url(/wwwimages/lib/images/html/gntray_link.jpg) left center repeat-x;
+		text-decoration: none;
+	}
+
+/**** Global Footer
+/**********************************************************************************************/
+	#globalfooter{
+		width: 100%;
+		font-size: 0.917em;
+		position: relative;
+		z-index: 3;
+		zoom: 1;
+		padding: 15px 0 24px 0;
+		text-align: left;
+		background: url(/wwwimages/lib/images/template/gnav/footer.jpg) repeat-x;
+	}
+	#footer-menu{
+		width: 935px;
+		position: relative;
+		display: block;
+		margin: 0 auto;
+	}
+	#footer-menu .menu{
+		font-size: 1em;
+		line-height: 1.3;
+		color: #888;
+		margin: 0 0 10px -9px;
+		padding: 1px;
+	}
+	#footer-menu a,
+	#footer-menu a:hover,
+	#footer-menu a:visited{
+		color: #333;
+		text-decoration: none;
+	}
+	#footer-menu a:hover{
+		background-color: #6a6a6a;
+		color: #fff;
+	}
+	#footer-menu .menu li,
+	#footer-menu .menu a{line-height: 1.3;}
+	#footer-menu .menu a{padding: 4px 8px;}
+	#footer-menu p{
+		margin-bottom: 0.3em;
+		color: #888;
+	}

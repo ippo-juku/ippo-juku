@@ -1,0 +1,45 @@
+
+#tooltip{
+	position: absolute;	
+	left: 50%;
+	z-index: 100;
+	display: none;
+	max-width: 300px;
+	padding: 6px;
+	font-size: 11px;
+	font-style: normal;
+	line-height: 1;
+	text-align: left;
+	text-decoration: none;
+	color: #fff;
+	text-shadow: #000 0 -1px 0;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #020202 #090909 #030303 #161616;
+	background-color: #3e3f40;
+	background-image: -webkit-gradient( linear, 0 0, 0 100%, from( #4a4b4d ), to( #343536 ) );
+	background-image: -webkit-linear-gradient( #4a4b4d, #343536 );
+	background-image: -moz-linear-gradient( #4a4b4d, #343536 );
+	background-image: -ms-linear-gradient( #4a4b4d, #343536 );
+	background-image: -o-linear-gradient( #4a4b4d, #343536 );
+	background-image: linear-gradient( #4a4b4d, #343536 );
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 1px 5px rgba( 0, 0, 0, .4 ), inset 0 1px 0 rgba( 255, 255, 255, .15 );
+	-moz-box-shadow: 0 1px 5px rgba( 0, 0, 0, .4 ), inset 0 1px 0 rgba( 255, 255, 255, .15 );
+	-ms-box-shadow: 0 1px 5px rgba( 0, 0, 0, .4 ), inset 0 1px 0 rgba( 255, 255, 255, .15 );
+	-o-box-shadow: 0 1px 5px rgba( 0, 0, 0, .4 ), inset 0 1px 0 rgba( 255, 255, 255, .15 );
+	box-shadow: 0 1px 5px rgba( 0, 0, 0, .4 ), inset 0 1px 0 rgba( 255, 255, 255, .15 );
+}
+#tip-title{
+	display: block;
+	font-weight: bold;
+	padding-bottom: 1ex;
+	white-space: nowrap;
+}
+#tip-desc{
+}
+

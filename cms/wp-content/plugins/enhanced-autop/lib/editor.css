@@ -1,0 +1,25 @@
+
+wp_protect{
+	display: block;
+	min-width: 16px;
+	min-height: 16px;
+	max-width: 100%;
+	overflow: hidden;
+	margin: 10px 0;
+	padding: 2px;
+	border: none !important;
+	background: #b44;
+	text-align: center;
+	cursor: default;
+	cursor: not-allowed;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+}
+wp_protect:after{
+	content: "HTMLで編集してください";
+	color: #fff;
+	font-size: 10px;
+}

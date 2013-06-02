@@ -1,0 +1,29 @@
+<?php
+	header('Content-Type: text/css');
+?>
+@charset "UTF-8";
+/*	MASTER
+	Import Screen CSS
+	$Id: screen.css, v2.47 2010/03/25 21:32:40 ykiwng Exp $
+----------------------------------------------------------------------------------------------------
+	Copyright 2010 IppoJuku.
+	All rights reserved.
+----------------------------------------------------------------------------------------------------*/
+
+@import url("resetcss.css");
+@import url("screen/htmlStyles.css");
+@import url("screen/structure.css");
+@import url("screen/images.css");
+@import url("screen/globalnav.css");
+
+
+<?php
+	readfile("screen/items.css");
+	readfile("screen/typography.css");
+	readfile("screen/columns.css");
+	readfile("screen/themes.css");
+	readfile("screen/form.css");
+?>
+
+
+/* EOF */

@@ -1,0 +1,218 @@
+
+/*=== Side Nav
+==============================================================================================*/
+.tpl-sidenav #side-nav{ background: #eff1f2; }
+
+.tpl-sidenav #side-nav h3{
+	color: #7f888b;
+	font-size: 1.167em;
+	padding: 20px 20px 0px;
+}
+.tpl-sidenav #side-nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 10px 20px;
+}
+.tpl-sidenav #side-nav li{
+	margin: 0;
+	padding: 0;
+	color: #7f888b;
+	border-top: 1px solid #d5d8da;
+}
+
+.tpl-sidenav #side-nav a{
+	display: block;
+	width: auto;
+	padding: 10px 0;
+}
+.tpl-sidenav #side-nav li span{ color: #7f888b; }
+
+.tpl-sidenav #side-nav .icon:before{
+	font-size: 1em;
+	vertical-align: .1ex;
+}
+
+
+/*=== Blog
+==============================================================================================*/
+.type-post #side-nav ul{
+	margin: 0 0 20px;
+	padding: 0;
+	text-shadow: 0 1px 0 #fff;
+	list-style: none;
+	behavior: url("/lib/htc/PIE.htc");
+}
+.type-post #side-nav ul a{
+	font-weight: normal;
+	color: #66696c;
+	padding: 8px 0;
+	display: block;
+	width: auto;
+}
+.type-post #side-nav li{
+	margin: 0;
+	padding: 0;
+}
+.type-post #side-nav ul a:hover{ color: #125687; }
+.type-post #side-nav h3{
+	margin: 0;
+	padding: 6px 0;
+	font-size: 1.417em;
+	color: #3a3d40;
+	text-shadow: 0 1px 0 #fff;
+	behavior: url("/lib/htc/PIE.htc");
+}
+.type-post #side-nav li,
+.type-post #side-nav h3{
+	border-bottom: 1px solid #c5c9cc;
+	-moz-box-shadow: 0 1px 0 rgba( 255, 255, 255, .7 );
+	-webkit-box-shadow: 0 1px 0 rgba( 255, 255, 255, .7 );
+	-o-box-shadow: 0 1px 0 rgba( 255, 255, 255, .7 );
+	-ms-box-shadow: 0 1px 0 rgba( 255, 255, 255, .7 );
+	box-shadow: 0 1px 0 rgba( 255, 255, 255, .7 );
+	behavior: url("/lib/htc/PIE.htc");
+}
+
+@media ( max-width: 768px ){
+	.type-post #side-nav aside{
+		padding: 0 10px;
+	}
+}
+@media ( max-width: 320px ){
+	.type-post #side-nav aside{
+		padding: 0 15px;
+	}
+	.type-post .content #hero img{
+		width: 150% !important;
+		margin: 0 -25%;
+	}
+}
+
+
+/*=== Portal
+==============================================================================================*/
+/*	Theme
+-----------------------------------------------*/
+body.tpl-portal{ background: #3a3d40 url("/lib/images/background/softnoise_cross_3a3d40.jpg") 0 4px repeat; }
+
+.tpl-portal .container{
+	padding-bottom: 0;
+	color: #fff;
+	text-shadow: #222 0 1px 0;
+	font-size: 1.167em;
+	behavior: url("/lib/htc/PIE.htc");
+}
+.tpl-portal .content{
+	margin: 0 auto;
+	margin-top: 0;
+	padding: 20px 10px;
+	background: transparent;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+	-ms-box-shadow: none;
+	box-shadow: none;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	-o-border-radius: 0;
+	-ms-border-radius: 0;
+	border-radius: 0;
+	border-width: 1px 0 1px;
+	border-style: solid;
+	border-color: #222 transparent #555;
+	border-color: rgba( 0, 0, 0, .3 ) transparent rgba( 255, 255, 255, .15 );
+}
+
+/*	Global Nav
+-----------------------------------------------*/
+.tpl-portal #blackband{
+	margin-bottom: 0;
+	background: none;
+	-moz-box-shadow: inset 0 3px 0 rgba( 0, 0, 0, .1 );
+	-webkit-box-shadow: inset 0 3px 0 rgba( 0, 0, 0, .1 );
+	-o-box-shadow: inset 0 3px 0 rgba( 0, 0, 0, .1 );
+	-ms-box-shadow: inset 0 3px 0 rgba( 0, 0, 0, .1 );
+	box-shadow: inset 0 3px 0 rgba( 0, 0, 0, .1 );
+	behavior: url("/lib/htc/PIE.htc");
+}
+
+.tpl-portal #globalfooter{
+	color: #777b7e;
+	text-shadow: #222 0 1px 0;
+	border-top: 1px solid #222;
+	border-top: 1px solid rgba( 0, 0, 0, .3 );
+}
+.tpl-portal #globalfooter a{ color: #777b7e; }
+.tpl-portal #globalfooter a:hover{ color: #c5c9cc; }
+.tpl-portal #globalfooter hr{ visibility: hidden; margin: 0 0 5px; }
+.tpl-portal #globalfooter .pipe li+li{ background-image: url("/lib/images/elements/pipe/pipe1.png"); }
+
+/*	Document Header
+-----------------------------------------------*/
+.tpl-portal #docheader{
+	margin: 0 auto;
+	padding: 0 10px 30px;
+	border-bottom: 1px solid #555;
+	border-bottom: 1px solid rgba( 255, 255, 255, .15 );
+}
+.tpl-portal #docheader .lead{
+	font-size: 1.857em;
+	margin-bottom: 0;
+}
+
+/*	Typography
+-----------------------------------------------*/
+.tpl-portal #docheader h2{
+	display: block;
+	float: none;
+	margin-bottom: 25px;
+	font-size: 80px;
+	color: #0096db;
+	line-height: 1.1em;
+	font-family: "StMarieThin";
+	letter-spacing: -.02em;
+	text-shadow: 0 1px 0 #222;
+}
+.tpl-portal h3, 
+.tpl-portal h4, 
+.tpl-portal h5{
+	color: #fff;
+	font-weight: normal;
+	text-shadow: #222 0 1px 0;
+	behavior: url("/lib/htc/PIE.htc");
+}
+.tpl-portal h5{ color: #aaa; }
+.tpl-portal p{ line-height: 1.85; }
+
+.tpl-portal .lead{ color: #66696c; }
+.tpl-portal .content h3{
+	font-family: "StMarieThin";
+	font-size: 3em;
+	color: #0096db;
+}
+.tpl-portal .content h3 a{ color: #0096db; }
+.tpl-portal .content h3 a:hover{ color: #66bc29; }
+.tpl-portal .content h3 a:hover:after{ content: "\20>"; }
+
+.tpl-portal .note{ color: #888f96; }
+
+.tpl-portal dl.list dt{ color: #c5c9cc; }
+
+
+@media ( max-width: 768px ){
+	.tpl-portal #docheader{ padding: 10px; }
+	.tpl-portal .content{ padding: 10px !important; }
+}
+@media ( max-width: 768px ){
+	.tpl-portal #docheader{ padding: 15px; }
+	.tpl-portal .content{ padding: 15px !important; }
+}
+@media ( max-width: 520px ){
+	.tpl-portal #docheader .lead{ font-size: 1.167em; }
+}
+@media only screen and ( -webkit-min-device-pixel-ratio: 2 ), only screen and ( min-device-pixel-ratio: 2 ){
+	body.tpl-portal{
+		background-image: url("/lib/images/background/softnoise_cross_3a3d40@2x.jpg");
+	 	-webkit-background-size: 210px 210px;
+	}
+}

@@ -1,0 +1,224 @@
+
+/**** Data
+/**********************************************************************************************/
+	table{
+		_font-size: 100%;
+	}
+	table caption{
+		padding-bottom: 0.5em;
+	}
+	table.data{
+		background-color: #FFF;
+		border-spacing: 1px;
+		border-collapse: separate;
+		margin-bottom: 1em;
+	}
+	.data td, 
+	.data th{
+		padding: .35em 2ex;
+	}
+	.data tbody th,
+	.data-bordered tbody th{
+		text-align: left;
+	}
+	.data .headerBlock th,
+	.data-bordered .headerBlock th,
+	.data-downloads .headerBlock,
+	.data-downloads .headerBlock th{
+		text-transform: uppercase;
+		background-color: #9d9fa3;
+	}
+	.data .headerBlock th,
+	.data .headerBlock a,
+	.data-bordered .headerBlock th,
+	.data-bordered .headerBlock a{
+		color: #fff;
+	}
+	.data .ts,
+	.data-bordered .ts{
+		font-size: 85%;
+	}
+	.data .headerBlock th{
+		padding-top: .5em;
+	}
+	.data tbody tr{
+		background-color: #f0f1f1;
+	}
+	.data td,
+	.data-bordered td,
+	.data-downloads td{
+		line-height: 1.35;
+	}
+	.tk .icon{
+		text-indent: 0;
+		background-position: left center;
+	}
+	.data .price{
+		text-align: right;
+	}
+	table.max{
+		width: 100%;
+	}
+	.linkTh th:hover,
+	.linkTh th:hover a,
+	.linkTd td:hover,
+	.linkTd td:hover a,
+	th.link:hover,
+	th.link:hover a,
+	td.link:hover,
+	td.link:hover a{
+		color: #c00;
+		background-color: #fff5c0;
+	}
+	.linkTh th a,
+	.linkTd td a,
+	th.link a,
+	td.link a{
+		display: block;
+	}
+	.linkTh th:empty:hover,
+	.linkTd td:empty:hover{
+		background-color: #9d9fa3;
+	}
+	.linkTh th:empty:hover,
+	.linkTd td:empty:hover{
+		background-color: inherit;
+	}
+
+/**** Data Meta
+/**********************************************************************************************/
+	.data-meta{
+		border-spacing: 0;
+		border-collapse: 0;
+		text-align: left;
+		margin-bottom: 1em;
+	}
+	.data-meta caption{
+		font-weight: bold;
+		padding: 0 0 .75em;
+		caption-side: top;
+		text-align: left;
+		border-bottom: 1px solid #999;
+		margin-bottom: .5em;
+	}
+	.data-meta th,
+	.data-meta td {
+		padding-right: 1.75ex;
+		padding-bottom: .35em;
+	}
+
+/**** Data Bordered
+/**********************************************************************************************/
+	table.data-bordered{
+		margin-bottom: 1em;
+		border-spacing: 0;
+		border-collapse: collapse;
+		border-bottom: solid 1px #b4b4b4;
+		border-right: solid 1px #b4b4b4;
+	}
+	.data-bordered thead th{
+		vertical-align: middle;
+	}
+	.data-bordered th{	
+		background-color: #cdcdcd;
+		color: #454545;
+		font: bold 0.85 Arial, Helvetica, sans-serif;
+		text-transform: none;
+		font-size: 100%;
+	}
+	.data-bordered td{
+		font-size: 0.917em;
+	}
+	.data-bordered .alt td{
+		background-color: #e5e5e5;
+	}
+	.data-bordered tbody tr{
+		background-color: #f9f9f9;
+	}
+	.data-bordered th,
+	.data-bordered td{
+		padding: 0.35em 10px;
+		vertical-align: top;
+		border-top: solid 1px #b4b4b4;
+		border-left: solid 1px #b4b4b4;
+	}
+	td.nodata,
+	th.nodata,
+	td.data-none{	
+		border-top: solid 1px #fff;
+		border-left: solid 1px #fff;
+		background: #fff !important;
+	}
+	table.data-downloads{
+		position: relative;
+		left: -16px;
+		_left: 0;
+		_margin-left: -16px;
+		margin-right: -17px;
+		border-right: none;
+		border-bottom: solid 1px #ccc;
+		border-spacing: 0;
+		border-collapse: collapse;
+		width: 558px;
+	}
+	::root table.data-downloads{
+		margin-right: -16px;
+	}
+	.data-downloads th{
+		background-color: transparent;
+		color:#000;
+		border-bottom: 2px solid #ccc;
+		text-transform: uppercase;
+	}
+	.data-downloads .headerBlock,
+	.data-downloads .headerBlock th{
+		background-color: #9d9fa3;
+		color: #fff;
+		text-transform: none;
+	}
+	.data-downloads tbody tr{
+		background-color: #fdfdfd;
+	}
+	.data-downloads th,
+	.data-downloads td{
+		border-left: none;
+		border-top: solid 1px #ccc;
+		padding: 0.35em 10px;
+		vertical-align: top;
+	}
+	.data-downloads .no-border-top td{
+		border-top: none;
+	} 
+	.data-downloads tbody td{	
+		border-right: 1px solid #ccc;
+		border-bottom: none;
+	}
+	.data-downloads .productHead{
+		font-weight: normal;
+		text-align:left;
+		text-transform: none;
+		background-color: #fff;
+		padding-top: 0.85em;
+		padding-bottom: 0;
+	 }
+	.data-downloads .treelist{
+		margin-top: -0.35em;
+	}
+	.data-downloads .treelist dt{
+		font-weight: bold;
+	}
+
+/**** Support Plan Colors
+/**********************************************************************************************/
+	th.gold,td.gold{
+		background-color: #f8df80 !important;
+	}
+	th.silver,td.silver{
+		background-color: #c0c0c1 !important;
+	}
+	th.bronze,td.bronze{
+		background-color: #ddcab8 !important;
+	}
+	th.platinum,td.platinum{
+		background-color: #f5f5f5 !important;
+	}

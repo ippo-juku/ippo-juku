@@ -1,0 +1,9 @@
+<Files *.js>
+	Header append Access-Control-Allow-Origin: *
+	Header append Access-Control-Allow-Methods: *
+	Header append Access-Control-Allow-Headers: *
+</Files>
+
+<Files scripts.js>
+	ForceType application/x-httpd-php
+</Files>
